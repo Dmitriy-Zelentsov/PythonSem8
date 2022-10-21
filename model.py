@@ -39,7 +39,6 @@ def diff_contact(book):
     delimiter = '|'
     str = delimiter.join(line)
     book[index] = str
-    print(book)
     with open('book.txt', 'w',encoding ='utf-8') as f: 
         f.writelines("%s" % place for place in book)
         print('Замена выполнена')
